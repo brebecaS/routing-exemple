@@ -8,6 +8,7 @@ import ContactPage from "./pages/ContactPage";
 import RepositoriesListPage from "./pages/RepositoriesListPage";
 
 import RepositoryPage from "./pages/RepositoryPage";
+import UserPage from "./pages/UserPage";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
@@ -23,7 +24,7 @@ root.render(
       <Route path="/users" element={<UsersPage />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/repositories-list" element={<RepositoriesListPage />} />
-      <Route path="/user/:userId" element={<>user page</>} />
+      <Route path="/user/:userId" element={<UserPage />} />
 
       <Route path="/repository/:repositoryName" element={<RepositoryPage />} />
 
