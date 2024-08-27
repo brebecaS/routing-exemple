@@ -15,6 +15,9 @@ function Nav() {
         <li>
           <Link to={"/contact"}>Contact</Link>
         </li>
+        <li>
+          <Link to={"/repositories-list"}>Repositories</Link>
+        </li>
       </ul>
       {/* <button class="search">Search</button> */}
     </nav>
