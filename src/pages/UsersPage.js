@@ -1,9 +1,10 @@
 import { usersInfoList } from "../constants";
+import { Link } from "react-router-dom";
 
 const UsersPage = () => {
   const usersList = usersInfoList.map((user) => (
     <li key={user.id}>
-      <a>{user.name}</a>
+      <Link to={"/user/" + user.id}>{user.name}</Link>
     </li>
   ));
 
