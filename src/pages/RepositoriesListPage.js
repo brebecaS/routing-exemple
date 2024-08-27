@@ -7,24 +7,14 @@ const RepositoriesListPage = () => {
     "useState_exercises",
   ].map((repo) => (
     <li key={repo}>
-      <Link to="/repository/.....">{repo}</Link>
+      <Link to={"/repository/" + repo}>{repo}</Link>
     </li>
   ));
 
   return (
     <div>
       <h1>Repositories List Page</h1>
-      <ul>
-        <li>
-          <Link to="/repository/shop_app">shop_app</Link>
-        </li>
-        <li>
-          <Link to="/repository/useEffect_exercises">useEffect_exercises</Link>
-        </li>
-        <li>
-          <Link to="/repository/useState_exercises">useState_exercises</Link>
-        </li>
-      </ul>
+      <ul>{repositoriesListElements}</ul>
     </div>
   );
 };

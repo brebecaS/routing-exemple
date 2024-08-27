@@ -23,6 +23,7 @@ root.render(
       <Route path="/users" element={<UsersPage />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/repositories-list" element={<RepositoriesListPage />} />
+      <Route path="/user/:userId" element={<>user page</>} />
 
       <Route path="/repository/:repositoryName" element={<RepositoryPage />} />
 
